@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Koifish
-subtitle: 锦鲤，致力于成为一名优秀的全栈工程师
+title: 张喜硕
+subtitle: 致力于成为一名优秀的全栈工程师
 description: 张喜硕的个人博客
-keywords: Koifish
+keywords: 张喜硕
 author: 张喜硕
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://zhangxishuo.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
