@@ -4,6 +4,8 @@ date: 2018-04-01 16:23:26
 tags: 
 - php
 - orm
+photos:
+- https://zhangxishuo.github.io/blog-images/2018/04/01/doctrine-hibernate-in-php.jpg
 ---
 
 对象关系映射，`Java`开发中我们使用`Hibernate`，将`Java Bean`映射为数据表，解决了团队协作中数据库同步的问题，同时也通过对象关系映射技术使我们对数据库的操作更加符合面向对象的思想。
