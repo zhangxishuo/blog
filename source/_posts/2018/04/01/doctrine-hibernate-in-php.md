@@ -222,3 +222,11 @@ php vendor/bin/doctrine orm:schema-tool:update
 
 {% asset_img 6.png teacher %}
 
+**思考**
+
+`php`作为一门弱类型的语言，代码规范性并不强，每次获取到一个对象，我们并不知道其拥有什么属性。这回对我们的开发造成阻碍。
+
+`SpringBoot`项目中，由于引入了`hibernate`，我们可以查看每个数据表所对应的类，进而知道获取到的对象有什么属性。
+
+如果我们在使用`php`进行开发时，如在`Laravel`中引入`doctrine`，应该会让我们避免一些由于`php`规范性不强而引发的一些问题。
+
