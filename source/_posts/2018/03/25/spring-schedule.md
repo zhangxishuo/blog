@@ -1,0 +1,20 @@
+---
+title: spring 任务调度
+date: 2018-03-25 11:36:27
+tags:
+- spring
+- schedule
+photos:
+- https://zhangxishuo.github.io/blog-images/2018/03/25/spring-schedule.jpg
+---
+
+对于某些查询量较大且精确度不要求实时准确时，为了提升查询的效率，我们会单独建一张仅用于查询的表。
+
+为了维护这张表，我们需要在服务器空闲时查询数据，然后存入表中，所以我们需要任务调度。
+
+<!-- more -->
+
+**任务调度**
+
+任务调度，也就是我们平常所说的定时任务。
+
