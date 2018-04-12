@@ -4,6 +4,8 @@ date: 2018-03-18 10:31:15
 tags:
 - 微信小程序
 - UI
+photos:
+- https://zhangxishuo.github.io/blog-images/2018/03/18/zanui-note.jpg
 ---
 
 对于一个不了解设计的软件工程师来说，样式简直是世界上最难的东西。所以我们需要一款优雅的小程序`UI`框架。
