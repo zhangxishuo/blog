@@ -3,8 +3,6 @@ title: 揭秘 AOP
 date: 2018-04-08 09:08:52
 tags:
 - aop
-photos:
-- https://zhangxishuo.github.io/blog-images/2018/04/08/expose-aop.jpg
 ---
 
 假如我们需要在对数据表进行操作时验证用户的权限，看用户是否有操作该表的权限。

@@ -1,8 +1,9 @@
 ---
 title: 初遇TensorFlow
 date: 2018-04-15 08:26:40
+categories: 人工智能
 tags:
-- 人工智能
+- AI
 - tensorflow
 ---
 
