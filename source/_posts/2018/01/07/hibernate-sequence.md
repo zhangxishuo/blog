@@ -1,6 +1,7 @@
 ---
 title: hibernate_sequence 问题解决
 date: 2018-01-07 12:55:51
+categories: SpringBoot
 tags:
 	- hibernate
 	- database

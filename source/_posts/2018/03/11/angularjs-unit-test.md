@@ -1,9 +1,10 @@
 ---
 title: AngularJS 单元测试
 date: 2018-03-11 21:49:49
+categories: AngularJS
 tags:
-- AngularJS
-- test
+- javascript
+- 单元测试
 ---
 
 写了前台的过滤器，引入了`AngularJS`的单元测试，最初感觉`Jasmine`的语法怎么看起来这么复杂，当真正理解时，发现过滤器的单元测试其实很简单。

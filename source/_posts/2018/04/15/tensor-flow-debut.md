@@ -1,10 +1,9 @@
 ---
 title: 初遇TensorFlow
 date: 2018-04-15 08:26:40
-categories: 人工智能
+categories: TensorFlow
 tags:
 - AI
-- tensorflow
 ---
 
 人工智能又一次蓬勃发展，虽然不知道是否会像前几次那样突然停滞，但是就目前的情形看，人工智能还是最火热的一个话题。

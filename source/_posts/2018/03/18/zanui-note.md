@@ -1,8 +1,8 @@
 ---
 title: ZanUI 小记
 date: 2018-03-18 10:31:15
+categories: 微信小程序
 tags:
-- micro-program
 - UI
 ---
 
