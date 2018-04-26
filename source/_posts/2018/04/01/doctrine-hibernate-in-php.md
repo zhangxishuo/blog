@@ -1,7 +1,7 @@
 ---
 title: doctrine php中的Hibernate
 date: 2018-04-01 16:23:26
-categories: php
+categories: 深度
 tags: 
 - php
 - orm
@@ -13,7 +13,7 @@ tags:
 
 <!-- more -->
 
-**Google**
+# Google
 
 {% asset_img 0.png Google %}
 
@@ -25,7 +25,9 @@ tags:
 
 安装`Doctrine`，建议使用`Composer`，这是一个专门针对`php`的包管理工具，类似我们使用过的`npm`，这里有一篇非常详细的安装教程[Mac Install Composer](https://www.abeautifulsite.net/installing-composer-on-os-x)。
 
-**安装**
+# Doctrine
+
+## 安装
 
 新建一个空的项目，新建文件`composer.json`。
 
@@ -50,7 +52,7 @@ tags:
 
 除了安装依赖，我们还需要`bootstrap.php`和`cli-config.php`来配置和启动项目，比较简单，此处不再赘述。
 
-**入门**
+## 入门
 
 入门，当然是我们无比熟悉的教务管理系统啦！
 
@@ -58,7 +60,7 @@ tags:
 
 `Java`中，我们使用注解完成实体对象映射。而在`php`中，我们使用注释。其实注解就是注释。
 
-**教师**
+## 教师
 
 ```php
 <?php
@@ -151,7 +153,7 @@ class Teacher
 }
 ```
 
-**学生**
+## 学生
 
 ```php
 <?php
@@ -206,7 +208,7 @@ class Klass
 }
 ```
 
-**创建数据表**
+## 创建数据表
 
 与`hibernate`相同，此处有两种生成数据库的方式，`create`与`update`。
 
@@ -221,7 +223,7 @@ php vendor/bin/doctrine orm:schema-tool:update
 
 {% asset_img 6.png teacher %}
 
-**思考**
+# 思考
 
 `php`作为一门弱类型的语言，代码规范性并不强，每次获取到一个对象，我们并不知道其拥有什么属性。这回对我们的开发造成阻碍。
 
