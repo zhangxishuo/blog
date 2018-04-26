@@ -48,3 +48,65 @@ public class ResourceApplication {
 }
 ```
 
+## 添加配置
+
+设置定时任务，我们肯定不能把时间固定，因为可能会随着业务需求的改变而变更，我们我们定时任务执行的时间需要去在我们项目的配置文件中去添加一条关于定时任务时间的配置，用于动态去配置我们定时任务的执行时间。
+
+打开我们的配置文件`application.yml`，这里我们使用`yml`格式的配置文件，这种文件的好处是各个配置之间的层次清晰，比较易读。
+
+```yaml
+# 任务调度 cron表达式 设置定时任务
+schedule:
+  # 检定信息执行时间 [秒|分|小时|日期|月份|星期] 当前配置为每晚22点执行
+  checkedInfo: 0 0 22 * * ?
+```
+
+## 组件声明
+
+开启定时任务，需要声明一个任务调度的组件，能让`Spring`扫描到。
+
+我们建立一个任务调度类`ScheduledTasks`，添加`@Component`注解，声明一个组件。
+
+```java
+@Component   // 声明一个能被Spring扫描到的组件
+public class ScheduledTasks {
+
+}
+```
+
+## 任务调度
+
+接下来我们实现任务调度就很简单了。
+
+声明变量，依赖注入，获取时间配置，定时执行任务。
+
+```java
+@Component   // 声明一个能被Spring扫描到的组件
+public class ScheduledTasks {
+
+    private static final Logger logger = Logger.getLogger(ScheduledTasks.class);  // 日志
+    private final YunzhiConfig yunzhiConfig;                                      // 数据库配置
+    private final InstrumentCheckedRateService instrumentCheckedRateService;      // 器具检定率
+    private final CheckAbilityStatisticsService checkAbilityStatisticsService;    // 器具检定能力统计
+
+    // 注入配置
+    @Autowired
+    public ScheduledTasks(YunzhiConfig yunzhiConfig, InstrumentCheckedRateService instrumentCheckedRateService, CheckAbilityStatisticsService checkAbilityStatisticsService) {
+        this.yunzhiConfig = yunzhiConfig;
+        this.instrumentCheckedRateService = instrumentCheckedRateService;
+        this.checkAbilityStatisticsService = checkAbilityStatisticsService;
+    }
+
+    // 任务调度，从配置中获取cron表达式
+    @Scheduled(cron = "${schedule.checkedInfo}")
+    public void generateInstrumentCheckedInfo() {
+        // 校验当前服务是否为主服务，只在主服务数据库中写入数据
+        if (yunzhiConfig.getMaster().equals(true)) {
+
+            logger.info("主服务开始执行操作");
+            instrumentCheckedRateService.generateInstrumentCheckedInfo();
+        }
+    }
+}
+```
+
