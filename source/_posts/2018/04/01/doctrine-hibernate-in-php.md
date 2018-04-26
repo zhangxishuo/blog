@@ -1,6 +1,7 @@
 ---
-title: doctrine php 中的 hibernate
+title: doctrine php中的Hibernate
 date: 2018-04-01 16:23:26
+categories: php
 tags: 
 - php
 - orm
