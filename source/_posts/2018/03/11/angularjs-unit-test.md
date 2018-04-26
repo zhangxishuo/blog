@@ -43,7 +43,4 @@ tags:
 
 `it`表示一个测试用例，与`describe`类似，参数为测试用例描述和执行方法。
 
-`expect`表示一个断言，期待一个
-
-
-
+`expect`表示一个断言，类似于我们在`SpringBoot`使用的`AssertThat`，我断定这个的值是什么。
