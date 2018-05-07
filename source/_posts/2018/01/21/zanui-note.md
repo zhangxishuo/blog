@@ -6,9 +6,9 @@ tags:
 - UI
 ---
 
-对于一个不了解设计的软件工程师来说，样式简直是世界上最难的东西。所以我们需要一款优雅的小程序`UI`框架。
+对于一个非设计出身的软件工程师来说，`CSS`样式简直是世界上最难的东西。所以我们需要使用一款美丽而优雅的`UI`框架。
 
-[`WeUI`](https://github.com/tencent/weui-wxss)是腾讯官方推出的一款`UI`框架，很好。但是对于更加喜欢蓝色科技感的我来说，或许更喜欢[`ZanUI`](https://www.youzanyun.com/zanui/weapp#/zanui/base/icon)。
+`Web`端项目中我们使用过`Bootstrap`、`AngularUI`等诸多强大且美观的`UI`框架，而我们的小程序同样不逊色。[`WeUI`](https://github.com/tencent/weui-wxss)是腾讯官方推出的一款`UI`框架，很好。但是对于更加喜欢蓝色科技感的我来说，或许更喜欢[`ZanUI`](https://www.youzanyun.com/zanui/weapp#/zanui/base/icon)。
 
 <!-- more -->
 
