@@ -37,7 +37,7 @@
   #}<a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">{#
     #}NexT.{{ theme.scheme }}{#
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
-#}</div>
+#} | <span class="post-count">博客全站共{{ totalcount(site) }}字</span></div>
 {% endif %}
 
 {% if theme.footer.custom_text %}
