@@ -1,6 +1,6 @@
 ---
 title: AngularJS表单验证
-date: 2018-04-22 16:59:33
+date: 2018-03-04 16:59:33
 categories: AngularJS
 tags:
 - javascript
