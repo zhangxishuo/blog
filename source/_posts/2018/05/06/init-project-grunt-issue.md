@@ -1,6 +1,6 @@
 ---
 title: 初始化AngularJS项目 Grunt 问题总结
-date: 2018-05-10 18:56:18
+date: 2018-05-06 18:56:18
 categories: AngularJS
 tags:
 - Grunt
