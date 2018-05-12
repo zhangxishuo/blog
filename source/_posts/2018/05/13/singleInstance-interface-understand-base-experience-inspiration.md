@@ -39,7 +39,7 @@ use app\index\model\Teacher;
 /**
  * 教师服务
  */
-class TeacherService implements Service
+class TeacherService
 {
     // 单例
     private static $instance;
@@ -77,3 +77,52 @@ function __construct(Request $request = null)
     $this->teacherService = TeacherService::getInstance();
 }
 ```
+
+**单例的理解**
+
+**接口**
+
+当时写着写着就忘记了写`getInstance`方法，我们想要的是，所有的`Service`，都是单例的，使用的时候不用去`new`，直接在构造函数中获取实例即可。
+
+为了解决这个问题，定义了一个`Service`接口，在接口中声明了`getInstance`方法，让每个`Service`类都去实现这个接口。
+
+```php
+<?php
+
+namespace app\index\service;
+
+interface Service
+{
+    public static function getInstance();
+}
+```
+
+实现这个接口，如果有未实现的方法，我们智能的`IDE`会给我们错误提示。
+
+如果使用接口仅仅停留在提示我们实现什么方法的话，那就太肤浅了。
+
+**接口的理解**
+
+通过`Service`接口，我们的控制器可以通过这个接口看到一个规范，所有实现`Service`接口的都有一个`getInstance`方法。
+
+假如，控制器与`Service`不是一个人写的。
+
+写控制器的人，不想看你错综复杂的代码实现，只想看看你的注释，那个方法是我应该用的，这个方法要什么参数，它返回给我什么参数。这不就是我们的接口吗？
+
+同时，会想一下我们用的`Spring`中的`Service`，自动装配的并不是一个类，而是一个接口。
+
+再去想想，其实我们的很多操作都与接口息息相关。
+
+我们要一个接口，`Spring`给了我们一个符合这个接口的对象，所以我们实现`AOP`时，我们可以在执行某个方法之前或之后执行一些方法。
+
+想想：如果让我们去实现`AOP`的实际原理，我们会怎么实现呢？
+
+1.首先找到需要自动注入接口的地方。
+
+2.找到这个接口的实现类，如果有多个实现类，去找符合其声明的实现类。
+
+3.我们并不急着去`new`一个这个对象，我们先去看看有没有什么切面的组件声明，如果有，那我们就不能直接注入这个类的对象了，我们需要包装一下。
+
+4.包装时，我们可以再建立一个类，将原方法都拷贝过来，然后再把我们切面的方法放在要切的方法之前或之后。
+
+5.根据我们包装的类再去建立对象，再把这个对象注入进去，调用这个对象的方法时，就会执行我们切入的方法，以此完成`AOP`。
