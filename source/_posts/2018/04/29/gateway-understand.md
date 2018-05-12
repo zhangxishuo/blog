@@ -113,4 +113,4 @@ server:
 
 网关判断：是不是`resource`，如果是，转到我们的后台；如果不是，转到我们的前台`http://localhost:8089`。
 
-然后这个`http://localhost:8088/views/login.html`的请求就转发到我们的`http://localhost:8089/views/login.html`了，然后浏览器就为我们呈现出一个完整的登陆页面。
+然后这个`http://localhost:8088/views/login.html`的请求就转发到我们的`http://localhost:8089/views/login.html`了，然后浏览器就为我们呈现出一个完整的登陆页面。 
