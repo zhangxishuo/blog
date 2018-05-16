@@ -1,7 +1,7 @@
 ---
 title: lombok 配置
 date: 2018-01-14 13:51:26
-categories: SpringBoot
+categories: 项目优化
 tags:
 	- java
 	- lombok

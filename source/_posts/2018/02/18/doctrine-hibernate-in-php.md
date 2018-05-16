@@ -1,7 +1,7 @@
 ---
 title: doctrine php中的Hibernate
 date: 2018-02-18 16:23:26
-categories: 深度
+categories: 项目优化
 tags: 
 - php
 - orm

@@ -1,7 +1,7 @@
 ---
 title: 单例与接口的理解 基于实验的一次灵感
 date: 2018-05-13 13:08:06
-categories: 深度
+categories: 设计模式
 tags:
 - interface
 - singleInstance
