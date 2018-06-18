@@ -1,5 +1,3 @@
-# 个人博客
-
 ## 说明
 
 本博客使用[`Hexo`](https://github.com/hexojs/hexo)搭建。
@@ -21,3 +19,9 @@ npm install
 # 本地预览
 hexo s
 ```
+
+## 思否
+
+目前新博客已迁移至思否，[张喜硕的专栏](https://segmentfault.com/blog/zhangxishuo)
+
+本博客已停止维护。
