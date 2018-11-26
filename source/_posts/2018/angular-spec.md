@@ -1,11 +1,9 @@
 ---
-title: angular
+title: Angular开发规范
 date: 2018-11-26 15:44:33
 tags: 
-- angular
+- Angular
 ---
-
-# angular开发规范
 
 **组件中的依赖注入使用private声明**
 
@@ -18,7 +16,6 @@ constructor(private router: Router) {
 
 ```typescript
 export class Stock {
-
     constructor(public id: number,
                 public name: string,
                 public price: number,

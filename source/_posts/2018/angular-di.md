@@ -1,0 +1,31 @@
+---
+title: Angular依赖注入
+date: 2018-11-26 16:08:18
+tags: 
+- Angular
+---
+
+```typescript
+@NgModule({
+    providers: [ProductService]
+    providers: [{ provide: ProductService, useClass: ProductService }]
+})
+export class AppModule {
+}
+```
+
+`providers`告诉`Angular`，当需要注入`ProductService`类型的对象时，使用`ProductService`类进行实例化。
+
+就像`SpringBoot`中，某实现类实现接口，为其添加`@Service`注解交给`Spring`托管，就可以注入一样。
+
+`Angular`也是一个`IOC`容器。
+
+```typescript
+@Component({
+    组件配置
+})
+export class ProductComponent {
+    constructor(private productService: ProductService) {
+    }
+}
+```
