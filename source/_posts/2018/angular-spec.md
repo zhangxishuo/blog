@@ -3,6 +3,7 @@ title: Angular开发规范
 date: 2018-11-26 15:44:33
 tags: 
 - Angular
+- spec
 ---
 
 **组件中的依赖注入使用private声明**

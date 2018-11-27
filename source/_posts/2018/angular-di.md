@@ -3,12 +3,16 @@ title: Angular依赖注入
 date: 2018-11-26 16:08:18
 tags: 
 - Angular
+- DI
 ---
+
+**提供器**
 
 ```typescript
 @NgModule({
     providers: [ProductService]
     providers: [{ provide: ProductService, useClass: ProductService }]
+    providers: [{ provide: ProductService, useFactory: () => {} }]
 })
 export class AppModule {
 }
@@ -19,6 +23,8 @@ export class AppModule {
 就像`SpringBoot`中，某实现类实现接口，为其添加`@Service`注解交给`Spring`托管，就可以注入一样。
 
 `Angular`也是一个`IOC`容器。
+
+**注入器**
 
 ```typescript
 @Component({
