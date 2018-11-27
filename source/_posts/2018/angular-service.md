@@ -1,9 +1,9 @@
 ---
-title: Angular依赖注入
+title: Angular服务
 date: 2018-11-26 16:08:18
 tags: 
 - Angular
-- DI
+- Service
 ---
 
 **提供器**

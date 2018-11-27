@@ -8,7 +8,11 @@ tags:
 
 **两个服务**
 
-`@Injectable`，声明该类可以被注入，交给`Angular`托管。
+`@Injectable`，声明该类交给`Angular`托管，才能使用`Angular`中的注入。
+
+与`Spring`类似，想要`@Autowired`，必须是一个`Spring`组件。
+
+`@Injectable`是依赖注入的核心，`@Component`等能注入的都是基于该装饰器。
 
 ```typescript
 @Injectable()
