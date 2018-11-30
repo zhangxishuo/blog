@@ -26,3 +26,9 @@ providers: [{ provide: ProductService, useFactory: () => { 返回一个对象实
     deps: [LoggerService]   // 需要的依赖
 }
 ```
+
+**值提供**
+
+```typescript
+{ provide: "IS_DEV_ENV", useValue: { isDev: true } }
+```
