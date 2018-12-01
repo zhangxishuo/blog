@@ -6,11 +6,13 @@ tags:
 - scope
 ---
 
-**两个服务**
+# 两个服务
 
 `@Injectable`，声明该类交给`Angular`托管，才能使用`Angular`中的注入。
 
 与`Spring`类似，想要`@Autowired`，必须是一个`Spring`组件。
+
+<!-- more -->
 
 `@Injectable`是依赖注入的核心，`@Component`等能注入的都是基于该装饰器。
 
@@ -24,7 +26,7 @@ export class AnotherStockService implements StockService {
 }
 ```
 
-**模块级注入**
+# 模块级注入
 
 ```typescript
 @NgModule({
@@ -34,7 +36,7 @@ export class AppModule {
 }
 ```
 
-**组件级注入**
+# 组件级注入
 
 ```typescript
 @Component({

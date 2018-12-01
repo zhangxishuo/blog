@@ -6,14 +6,16 @@ tags:
 - spec
 ---
 
-**组件中的依赖注入使用private声明**
+# 组件中的依赖注入使用private声明
 
 ```typescript
 constructor(private router: Router) {
 }
 ```
 
-**实体中的属性使用public声明**
+<!-- more -->
+
+# 实体中的属性使用public声明
 
 ```typescript
 export class Stock {

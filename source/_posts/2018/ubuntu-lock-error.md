@@ -6,7 +6,7 @@ tags:
 - lock
 ---
 
-**Could not get lock /var/lib/dpkg/lock’ Error in Ubuntu**
+# Could not get lock /var/lib/dpkg/lock’ Error in Ubuntu
 
 ```shell
 ps aux | grep -i apt
@@ -15,6 +15,8 @@ ps aux | grep -i apt
 ```shell
 sudo kill <process id>
 ```
+
+<!-- more -->
 
 ```shell
 sudo killall apt apt-get

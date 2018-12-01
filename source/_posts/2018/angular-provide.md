@@ -6,7 +6,7 @@ tags:
 - provide
 ---
 
-**工厂方法**
+# 工厂方法
 
 ```typescript
 providers: [{ provide: ProductService, useFactory: () => { 返回一个对象实例 } }]
@@ -16,7 +16,9 @@ providers: [{ provide: ProductService, useFactory: () => { 返回一个对象实
 
 工厂方法只在创建第一个需要注入的对象时被调用一次。
 
-**在工厂方法中使用依赖注入**
+<!-- more -->
+
+# 在工厂方法中使用依赖注入
 
 ```typescript
 {
@@ -27,7 +29,7 @@ providers: [{ provide: ProductService, useFactory: () => { 返回一个对象实
 }
 ```
 
-**值提供**
+# 值提供
 
 ```typescript
 { provide: "IS_DEV_ENV", useValue: { isDev: true } }
