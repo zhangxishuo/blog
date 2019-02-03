@@ -11,8 +11,8 @@ menu:
 # favicon & avtor
 # if the value of avtor is false, the 'say' is optional.
 favicon: /img/favicon.ico
-avtor: /img/logo.png
-say: Welcome 
+avtor: false
+say: 张喜硕 - segmentfault
 
 # background_image
 # /img/1.jpg
@@ -20,10 +20,10 @@ say: Welcome
 # https://sariay.github.io/Random-img/
 # May be cause CROS bug!
 background_image:
-    mode: normal #normal or random
-    normal_url: /img/1.jpg
-    random_max: 110 
-    random_url: https://sariay.github.io/Random-img/
+    mode: random #normal or random
+    normal_url: /img/yunzhi.jpg
+    random_max: 22
+    random_url: https://zhangxishuo.github.io/random-slider/
     
 # show motto
 motto:
