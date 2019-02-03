@@ -24,6 +24,10 @@ background_image:
     normal_url: /img/yunzhi.jpg
     random_max: 22
     random_url: https://zhangxishuo.github.io/random-slider/
+
+# post_code
+code_copy:
+    enable: true
     
 # show motto
 motto:
@@ -97,10 +101,6 @@ post_toc:
 # post_mathJax
 mathjax:
   enable: false
-  
-# post_code
-code_copy:
-    enable: false
 
 # post_excerpt for index page
 excerpt_cart: 80
