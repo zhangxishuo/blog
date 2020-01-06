@@ -51,15 +51,6 @@ theme = "canoe"
     weight = 5
     url = "/about/"
 
-# 文章归类 Taxonomy
-[[menu.taxonomy]]
-  name = "Tag"
-  identifier="tags"
-
-[[menu.taxonomy]]
-  name = "Category"
-  identifier="categories"
-
 # 友情链接 Your Friend's blog links
 [[menu.friend]]
   name = "John Jiang'blog"
