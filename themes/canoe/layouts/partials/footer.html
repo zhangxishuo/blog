@@ -4,9 +4,6 @@
       <div class="wrapper">
         <div class="group group-slink">
           <h5>{{ .Site.Title }}</h5>
-          <p>Theme
-            <a href="https://github.com/stkevintan/canoe" target="_blank">canoe</a> designed by
-            <a href="https://github.com/stkevintan" target="_blank">Kevin Tan</a> with ❤</p>
           <ul class='slink'>
             {{ with .Site.Menus.social }} {{ range . }}
             <li>
@@ -18,7 +15,7 @@
           </ul>
         </div>
         <div class="group group-flink">
-          <h5>My Friends</h5>
+          <h5>友情链接</h5>
           <ul>
             {{ with .Site.Menus.friend }}{{ range . }}
             <li>
@@ -32,7 +29,9 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-      <div class="inner">{{ .Site.Params.copyright }}</div>
+      <div class="inner">
+        {{ .Site.Params.copyright }}
+      </div>
     </div>
   </div>
 </footer>
