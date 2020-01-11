@@ -11,7 +11,7 @@ tags:
 
 ## splice
 
-函数功能：从`start`开始删除`deleteCount`个元素，包括`start`索引位置的元素，并在该位置插入新元素`items`。
+从`start`开始删除`deleteCount`个元素，包括`start`索引位置的元素，并在该位置插入新元素`items`。
 
 ```javascript
 splice(start: number, deleteCount: number, ...items: T[]): T[];
