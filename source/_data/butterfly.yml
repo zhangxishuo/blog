@@ -373,7 +373,7 @@ click_heart:
 
 # 點擊出現文字，文字可自行修改
 ClickShowText:
-  enable: true
+  enable: false
   text:
     - 富强
     - 民主
@@ -432,11 +432,10 @@ subtitle:
   # source: 3  調用一句网（簡體） http://yijuzhan.com/
   # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的内容
-  source: 2
+  source: false
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
   sub:
-    - 今日事&#44;今日畢
-    - Never put off till tomorrow what you can do today
+    - 浅梦辄止，书墨未浓
 
 ####    側邊欄    ####
 #-------------------------------------
@@ -445,7 +444,7 @@ aside_mobile: true
 
 # 側邊欄顯示設置
 aside:
-  position: right # left or right
+  position: left # left or right
   card_author: true
   card_announcement: true
   card_recent_post: true
@@ -470,7 +469,7 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 6/7/2018 00:00:00
+  start_date: 1/1/2020 00:00:00
 
 ####   右下角按鈕  ####
 #----------------------------------------------
