@@ -7,6 +7,51 @@ tags:
   - 函数大全
 ---
 
+# 概述
+
+`JavaScript`的`Array`可以包含任意数据类型。
+
+```javascript
+var arr = [1, 'Hello World', false, null, undefined, {}, []];
+```
+
+# 属性
+
+数组只有唯一的属性`length`，获取数组的长度。
+
+## 清空数组
+
+```javascript
+var arr = [1, 2, 3, 4];
+arr.length = 0;
+```
+
+```
+arr -> []
+```
+
+## 扩大数组
+
+```javascript
+var arr = [1, 2, 3, 4];
+arr.length = 8;
+```
+
+```
+arr -> [1, 2, 3, 4, undefined, undefined, undefined, undefined]
+```
+
+## 越界
+
+```javascript
+var arr = [1, 2, 3, 4];
+arr[5] = 6;
+```
+
+```
+arr -> [1, 2, 3, 4, undefined, 6]
+```
+
 # 函数大全
 
 ## splice
