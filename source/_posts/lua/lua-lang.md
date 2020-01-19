@@ -6,3 +6,16 @@ tags:
   - 语言基础
   - 游戏
 ---
+# 引言
+
+## Lua 简介
+
+# 核心语法
+
+## Hello World
+
+```lua
+print("Hello World!")
+```
+
+## 数据类型
