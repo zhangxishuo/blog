@@ -11,6 +11,9 @@ tags:
 
 ## 配置代理
 
-```shell
+```bash
+# 配置 http 代理
 -c "http.proxy=127.0.0.1:19180"
+# 代理配置实例
+git -c "http.proxy=127.0.0.1:19180" push origin master
 ```
